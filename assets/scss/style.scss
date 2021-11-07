@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+@import "common/typography";
+@import "common/classes.scss";
+@import "common/normalise/normalise.scss";
+audio {
+  margin-left: 20px;
+  height: 80px;
+  opacity: 0.4;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
