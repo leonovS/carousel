@@ -25,6 +25,7 @@
   overflow: hidden;
   position: relative;
 }
+
 .carousel::before,
 .carousel::after {
   content: "";
@@ -34,10 +35,12 @@
   top: 0;
   z-index: 1;
 }
+
 .carousel::before {
   left: 0;
   background: linear-gradient(to right, #ebd143 0%, transparent 100%);
 }
+
 .carousel::after {
   right: 0;
   background: linear-gradient(to left, #ebd143 0%, transparent 100%);
@@ -47,6 +50,7 @@
   height: 100%;
   animation: slideshow 10s linear infinite;
 }
+
 .bg {
   background-image: url(../img/1620669718_30-phonoteka_org-p-pustinya-fon-multyashnii-35.jpg);
   background-repeat: repeat;
@@ -60,4 +64,9 @@
   position: absolute;
   z-index: 1;
   transform: translateX(600px);
+
+  @media(max-width: 550px) {
+    left: -380px;
+
+  }
 }

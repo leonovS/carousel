@@ -474,3 +474,9 @@ audio {
             transform: translateX(0%);
   }
 }
+
+@media (max-width: 550px) {
+  .slide__image-cowboy {
+    left: -380px;
+  }
+}
